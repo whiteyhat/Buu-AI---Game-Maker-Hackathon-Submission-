@@ -1,0 +1,5 @@
+{
+  "name": "Buu AI Game Maker - Gemini Hackathon Submision",
+  "description": "No-code 3D real-time game engine powered by Gemini, Three.js, and multiple 3D GenAI models. Non-technical users describe game logic, levels, assets, and ideas in plain English → AI instantly generates scripts, places assets, creates 3D models procedurally, rigs them, adds colliders, converts text to Mixamo-compatible animations, and shares playable games via link. Turn imagination into browser-playable prototypes in minutes.",
+  "requestFramePermissions": []
+}
