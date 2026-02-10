@@ -83,6 +83,7 @@ const Header = () => {
                             <div className="absolute right-0 mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden py-2 animate-in fade-in zoom-in duration-200 origin-top-right">
                                 <a 
                                     href="https://github.com/whiteyhat/Buu-AI---Game-Maker-Hackathon-Submission-" 
+                                    target="_blank"
                                     className="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors font-medium"
                                     onClick={() => setIsGithubMenuOpen(false)}
                                 >
