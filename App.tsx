@@ -190,7 +190,7 @@ const App = () => {
             {/* Top Row: Name & Tools */}
             <div className="grid md:grid-cols-3 gap-6">
               <a 
-                href="https://buu.fun/app" 
+                href="https://atomic-coding.vercel.app/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group md:col-span-2 bg-indigo-500 text-white rounded-3xl p-8 flex flex-col justify-center cursor-pointer hover:bg-indigo-600 transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1"
@@ -212,7 +212,7 @@ const App = () => {
             {/* Middle Row: App Showcases */}
             <div className="grid md:grid-cols-2 gap-6">
               <a 
-                href="https://buu.fun/app" 
+                href="https://github.com/Buu-AI/atomic-coding" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="group relative bg-gray-900 rounded-3xl p-8 h-80 flex flex-col justify-start items-start overflow-hidden cursor-pointer shadow-lg transform transition-all hover:-translate-y-1 hover:shadow-xl"
@@ -271,20 +271,14 @@ const App = () => {
             </div>
 
             {/* Bottom Row: Project Description */}
-            <a 
-              href="https://github.com/friends4payments/dory-x402-gemini/commit/af5246b4bdec322a0bc942636bc76722726ae485"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-gray-100 cursor-pointer transform hover:-translate-y-1"
-            >
-                <div className="flex justify-between items-start mb-4">
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+                <div className="mb-4">
                     <h3 className="text-3xl font-bold text-gray-900">LLM Atomic Architecture</h3>
-                    <ArrowRightIcon />
                 </div>
                 <p className="text-gray-600 leading-relaxed text-lg">
                   Buu AI utilizes a modular agentic architecture where Gemini 3 Pro decomposes user prompts into atomic units-composable modules for game features, core state, and utilities with explicit dependency graphs. These atoms enable semantic vector search for reuse, while agents autonomously generate, validate, and integrate code via chain-of-thought prompting, incorporating user feedback through a conversational interface. This represents SOTA in game engines by offering zero-code extensibility beyond rigid ECS frameworks, autonomous procedural codegen for rapid development, hybrid human-AI co-creation for emergent complexity, and multimodal GenAI integration for dynamic 3D assets.
                 </p>
-            </a>
+            </div>
           </div>
         </div>
       </main>
