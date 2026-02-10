@@ -82,7 +82,7 @@ const Header = () => {
                         {isGithubMenuOpen && (
                             <div className="absolute right-0 mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden py-2 animate-in fade-in zoom-in duration-200 origin-top-right">
                                 <a 
-                                    href="/" 
+                                    href="https://github.com/whiteyhat/Buu-AI---Game-Maker-Hackathon-Submission-" 
                                     className="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors font-medium"
                                     onClick={() => setIsGithubMenuOpen(false)}
                                 >
@@ -199,7 +199,7 @@ const App = () => {
                   <h1 className="text-5xl font-bold">Launch Buu AI - Game Maker</h1>
                   <ArrowRightIcon />
                 </div>
-                <p className="mt-2 text-indigo-200">Interact with the platform to generate 3D assets with agents via chat.</p>
+                <p className="mt-2 text-indigo-200">If you can imagine games, you can build them in seconds.</p>
               </a>
               <div className="bg-gray-200 rounded-3xl p-8 flex flex-col justify-center shadow-sm">
                 <h3 className="font-bold text-lg mb-2">GEMINI 3 PRO</h3>
@@ -211,18 +211,34 @@ const App = () => {
 
             {/* Middle Row: App Showcases */}
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="relative bg-gray-900 rounded-3xl p-8 h-80 flex flex-col justify-start items-start overflow-hidden group shadow-lg">
+              <a 
+                href="https://buu.fun/app" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="group relative bg-gray-900 rounded-3xl p-8 h-80 flex flex-col justify-start items-start overflow-hidden cursor-pointer shadow-lg transform transition-all hover:-translate-y-1 hover:shadow-xl"
+              >
                 <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" 
                     style={{ backgroundImage: "url('https://qodex.ai/assets/blog-images/5-ways-to-use-cursor-ai-for-free-cover.png')" }}
                 >
-                    <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-40 transition-opacity"></div>
+                    <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-60 transition-opacity"></div>
                 </div>
+
+                {/* Arrow revealed on hover */}
+                <div className="absolute top-8 right-8 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ArrowRightIcon className="w-12 h-12 text-white" />
+                </div>
+
+                {/* Custom Tooltip Overlay */}
+                <div className="absolute inset-x-0 bottom-0 bg-black/80 text-white text-sm py-3 px-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20 text-center font-medium">
+                    Load your Buu AI Game Maker instance in Cursor
+                </div>
+
                 <div className="relative z-10 flex items-center gap-3">
                     <LiveDotIcon />
-                    <h3 className="text-3xl font-bold text-white tracking-wide">LIVE SUPPORT</h3>
+                    <h3 className="text-3xl font-bold text-white tracking-wide">LIVE</h3>
                 </div>
-              </div>
+              </a>
               
               <a 
                 href="https://buu.fun/app" 
@@ -262,11 +278,11 @@ const App = () => {
               className="group block bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all border border-gray-100 cursor-pointer transform hover:-translate-y-1"
             >
                 <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-3xl font-bold text-gray-900">Google Cloud Deployment Script:</h3>
+                    <h3 className="text-3xl font-bold text-gray-900">LLM Atomic Architecture</h3>
                     <ArrowRightIcon />
                 </div>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  Deploying a Mastra AI agent on Google Cloud can involve moderate complexity, particularly for TypeScript-based setups requiring custom handling of ephemeral storage, Node.js runtime configuration, and integrations like Vertex AI for Gemini models. Challenges include adapting Mastra's local file dependencies (e.g., LibSQLStore) for serverless environments like Cloud Run and ensuring seamless API routing across providers. However, we crafted a highly effective prompt in Google AI Studio that streamlined the process: it generated optimized deployment scripts, automated containerization, and integrated observability, reducing setup time from hours to minutes while ensuring scalable, production-ready endpoints.
+                  Buu AI utilizes a modular agentic architecture where Gemini 3 Pro decomposes user prompts into atomic units-composable modules for game features, core state, and utilities with explicit dependency graphs. These atoms enable semantic vector search for reuse, while agents autonomously generate, validate, and integrate code via chain-of-thought prompting, incorporating user feedback through a conversational interface. This represents SOTA in game engines by offering zero-code extensibility beyond rigid ECS frameworks, autonomous procedural codegen for rapid development, hybrid human-AI co-creation for emergent complexity, and multimodal GenAI integration for dynamic 3D assets.
                 </p>
             </a>
           </div>
